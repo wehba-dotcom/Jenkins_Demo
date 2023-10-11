@@ -10,6 +10,6 @@ steps("build")
 sh "dotnet build DivisorCounter.csproj "
 }
 
-}
+ }
 }
 }
