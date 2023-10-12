@@ -4,13 +4,14 @@ agent any
 triggers{
 pollSCM(" * * * * * ")
 }
+
 stages{
-stage("build")
-{
+  stage("build")
+   {
     steps{
-sh "docker compose build "
-}
-}
+        sh "docker compose build "
+         }
+   }
  }
  }
 
