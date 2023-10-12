@@ -1,17 +1,17 @@
 pipeline
  {
-agent any {
-Triggers{
+agent any
+triggers{
 pollscm("*****")
 }
 stages{
-steps("build")
+stage("build")
 {
-sh "dotnet build DivisorCounter.csproj "
+    steps{
+sh "docker compose build "
 }
-
+}
  }
  }
 
 
-}
