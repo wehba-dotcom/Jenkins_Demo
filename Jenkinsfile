@@ -8,7 +8,7 @@ pipeline
     stage("build")
     {
         steps{
-    echo "====++++something++++==== docker compose build "
+     sh " docker compose build DivisorCounter.csproj "
     }
     }
     }
