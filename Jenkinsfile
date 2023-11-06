@@ -1,21 +1,22 @@
 pipeline
 {
     agent any 
-    triggers{
-    pollSCM("* * * * *")
-    }
-    stages{
-    stage("build")
+    triggers
     {
-        steps{
-     sh "docker compose build"
+       pollSCM("* * * * *")
     }
-    }
-   stage("buildservice"){
-    steps{
-        sh "docker compose up counter-service"
-    }
-   }
+    stages
+    {
+     stage("build")
+        {
+                
+         steps
+            {
+            sh "docker compose build"
+            }
+        }
+        
+    
     }
     
 }
