@@ -8,7 +8,7 @@ pipeline
     stage("build")
     {
         steps{
-    sh "docker compose build "
+    echo "====++++something++++==== docker compose build "
     }
     }
     }
