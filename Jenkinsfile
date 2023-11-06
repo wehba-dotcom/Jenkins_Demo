@@ -11,7 +11,11 @@ pipeline
      sh "docker compose build"
     }
     }
-   
+   stage("buildservice"){
+    steps{
+        sh "docker compose up counter-service"
+    }
+   }
     }
     
 }
