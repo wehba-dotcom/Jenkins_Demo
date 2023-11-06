@@ -8,7 +8,13 @@ pipeline
     stage("build")
     {
         steps{
-     sh "dotnet build DivisorCounter.csproj"
+     sh "docker compose build"
+    }
+    }
+    stage("buildService")
+    {
+    steps{
+        sh"docker compose up DivisorCounter" 
     }
     }
     }
