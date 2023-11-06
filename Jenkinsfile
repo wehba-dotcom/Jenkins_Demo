@@ -11,12 +11,7 @@ pipeline
      sh "docker compose build"
     }
     }
-    stage("buildService")
-    {
-    steps{
-        sh"docker compose up DivisorCounter" 
-    }
-    }
+   
     }
     
 }
