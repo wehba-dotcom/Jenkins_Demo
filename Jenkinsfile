@@ -12,7 +12,7 @@ pipeline
                 
          steps
             {
-            sh "dotnet build DivisorCounter.csproj"
+            bat "docker compose build"
             }
         }
         
