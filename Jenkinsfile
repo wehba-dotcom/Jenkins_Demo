@@ -15,6 +15,13 @@ pipeline
             bat "docker compose build"
             }
         }
+        stage("buildDB")
+        {
+            steps
+            {
+                bat"docker compose build cache-db"
+            }
+        }
         
     
     }
