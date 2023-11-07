@@ -12,7 +12,7 @@ pipeline
                 
          steps
             {
-            sh "docker compose up counter-service"
+            bat "docker compose build"
             }
         }
         
